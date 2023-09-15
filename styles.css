@@ -39,14 +39,15 @@ main {
   border-style: none;
 }
 #addBtn {
-  position: absolute;
+  position: relative;
   margin-left: 15px;
-  bottom: 75%;
+  bottom: 80%;
   font-size: 40px;
   cursor: pointer;
 }
 
 #addBtn:hover{
+  position:sticky;
   scale: 1.1;
 }
 
@@ -69,6 +70,15 @@ ul > li {
 }
 ul > li:hover {
   box-shadow: 1px 1px 5px #aaaaaa;
+}
+
+ul > li > span {
+  position: absolute;
+  left: 65%;
+}
+
+ul > li > span:hover {
+  scale: 1.1;
 }
 
 .checked {
